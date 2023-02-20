@@ -22,7 +22,7 @@ Using the Viterbi algorithm, compute the decoded sequence.
 
 A) Viterbi Decoder 
 
-            1) In order to design a Viterbi code for the encoded message, the Generative polynomials are needed.
+            1) In order to design a Viterbi code for the encoded message, Generative polynomials are needed.
             2) g = [1 1 1 1 ; 1 1 0 1] based on the below figure.
             3) After that, the table with path metric is constructed.
             4) The table is filled based on the hamming distances.
