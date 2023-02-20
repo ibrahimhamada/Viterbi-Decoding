@@ -13,7 +13,7 @@ Starting with the all-zero state, and the received sequence is 111101011010...
 Using the Viterbi algorithm, compute the decoded sequence.
 
 ## Convolutional Enoder Diagram  <a name="Convolutional Enoder Diagram"></a>
-![image](https://user-images.githubusercontent.com/58476343/220167431-d1d11541-de7c-432e-9082-470194f8e28b.png)
+![image](https://user-images.githubusercontent.com/58476343/220168243-c12f1fe3-ab00-4d62-b197-5e03d2a95780.png)
 
 ## Possible States with inputs and outputs  <a name="Possible States with inputs and outputs"></a>
 ![image](https://user-images.githubusercontent.com/58476343/220167457-43ecc05e-b898-4588-a6e3-926598616e5c.png)
