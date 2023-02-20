@@ -36,6 +36,6 @@ B) MATLAB Viterbi
             3) Constraint Length K = 4
             4) CodeGenerator = [17 15] which is equivalent to [1111, 1101] in octal.
             5) vitdec() is used to decode the message using the constructed trellis.
-            6) 'trunc' — Specifies truncated operating mode. In truncated operating mode, the encoder is assumed to have started at the all-zeros state. The decoder traces back from the state with the best metric. This mode incurs zero delay. This mode is appropriate when you cannot assume the encoder ended at the all-zeros state and when you do not want to preserve continuity between successive calls to this function.
+            6) 'trunc' — Specifies truncated operating mode.
             7) 'hard' — The decoder expects binary input values of 0 or 1.
             
