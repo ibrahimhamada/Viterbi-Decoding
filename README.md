@@ -12,6 +12,11 @@ Given a Convolutional an encoder for a rate r = 1⁄2, constraint length K = 4 c
 Starting with the all-zero state, and the received sequence is 111101011010... 
 Using the Viterbi algorithm, compute the decoded sequence.
 
+## Convolutional Enoder Diagram  <a name="Convolutional Enoder Diagram"></a>
+![image](https://user-images.githubusercontent.com/58476343/220167431-d1d11541-de7c-432e-9082-470194f8e28b.png)
+
+## Possible States with inputs and outputs  <a name="Possible States with inputs and outputs"></a>
+![image](https://user-images.githubusercontent.com/58476343/220167457-43ecc05e-b898-4588-a6e3-926598616e5c.png)
 
 ## Implementation Steps:
 
@@ -21,10 +26,16 @@ A) Viterbi Decoder
             2) g = [1 1 1 1 ; 1 1 0 1] based on the below figure.
             3) After that, the table with path metric is constructed.
             4) The table is filled based on the hamming distances.
-            ![image](https://user-images.githubusercontent.com/58476343/220167431-d1d11541-de7c-432e-9082-470194f8e28b.png)
             5) Finally, the backward bits identification is performed to find the exact decoded message.
-            ![image](https://user-images.githubusercontent.com/58476343/220167457-43ecc05e-b898-4588-a6e3-926598616e5c.png)
+            
 
+B) MATLAB Viterbi
 
-## HIGH Compression Video <a name="HIGH Compression Video"></a>
-https://user-images.githubusercontent.com/58476343/220160074-7c0bb5df-cd9f-46c6-8ec2-78530db7aad6.mp4
+            1) In this part, I used the built in function to confirm the obtained results.
+            2) poly2trellis() function is used to find the trellis.
+            3) Constraint Length K = 4
+            4) CodeGenerator = [17 15] which is equivalent to [1111, 1101] in octal.
+            5) vitdec() is used to decode the message using the constructed trellis.
+            6) 'trunc' — Specifies truncated operating mode. In truncated operating mode, the encoder is assumed to have started at the all-zeros state. The decoder traces back from the state with the best metric. This mode incurs zero delay. This mode is appropriate when you cannot assume the encoder ended at the all-zeros state and when you do not want to preserve continuity between successive calls to this function.
+            7) 'hard' — The decoder expects binary input values of 0 or 1.
+            
