@@ -1,7 +1,5 @@
-# Implementation-of-Viterbi-Decoding
+# Viterbi-Decoding
 
-# Implementation-of-Video-Compression-H.264
-Implementation of video encoder/decoder using MATLAB
 
 My Project of the Information Theory and Coding Course Offered in Fall 2022 @ Zewail City.
 
